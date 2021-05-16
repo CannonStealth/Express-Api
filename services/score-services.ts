@@ -20,4 +20,8 @@ export default class {
         if (!results) return null;
         return results;
     }
+
+    static async deleteAll(): Promise<void> {
+        await scores.deleteMany()
+    }
 }
